@@ -1,8 +1,8 @@
 [color]
     ui = true
 [user]
-    name = ???
-    email = ???
+#    name = First Last
+#    email = first.last@email.com
 [push]
     default = simple
 [core]
