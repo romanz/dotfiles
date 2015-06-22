@@ -32,8 +32,10 @@ alias .....='cd ../../../..'
 # remove trailing whitespace from files
 alias trim="sed -i 's/[[:space:]]*$//' $@"
 
-# sudo apt-get install autojump
-alias j=autojump
+# shortcuts for cd
+j() {
+    $(python ~/.jump.py $@)
+}
 
 # For terminal title settings
 PROMPT_COMMAND='echo -ne "\033]0;$(basename `pwd`)\007"'

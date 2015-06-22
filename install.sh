@@ -1,16 +1,12 @@
 #!/bin/bash
-
 cd $(dirname $0)/files
-for src in *
+for src in $(ls -a)
 do
-	if [ -f $src ] 
+	if [ -f $src ]
 	then
-		dst=$HOME/.$src
-		if [ -f $dst ]
-		then
-			mv $dst $dst~
-		fi
+		dst=$HOME/$src
+		mv $dst $dst~
 		ln -s $PWD/$src $dst
-		echo "installed .$src"
+		echo "installed $dst"
 	fi
 done
