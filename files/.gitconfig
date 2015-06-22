@@ -8,7 +8,7 @@
 [core]
     whitespace = trailing-space,space-before-tab
 [gui]
-    editor = vi
+    editor = gedit
     historybrowser = gitg
     displayuntracked = true
 [alias]
