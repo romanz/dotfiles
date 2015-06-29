@@ -1,4 +1,4 @@
-alias e='~/Programs/ST3/sublime_text'
+alias e='subl'
 
 alias du='du -kh'    # Makes a more readable output.
 alias df='df -kTh'
@@ -22,6 +22,7 @@ alias f='find -name'
 alias cb='chromium-browser'
 alias ydl='python ~/Programs/youtube-dl/youtube-dl'
 alias ssh-ubuntu='ssh -l ubuntu'
+alias c='xclip -selection clipboard'
 
 alias clc='reset'
 alias ..='cd ..'
@@ -52,4 +53,4 @@ source ~/.git-completion.bash
 PS1='\[\033[33m\]$? \[\033[1;34m\]\w \[\033[1;32m\]$(__git_ps1 "[%s] ")\[\033[0m\]\$ '
 
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
-
+export PATH=$PATH:$HOME/.local/bin
