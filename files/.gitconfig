@@ -43,7 +43,7 @@
 [mergetool "meld3way"]
     cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
 [cola]
-    fontdiff = Source Code Pro,10,-1,5,50,0,0,0,0,0
+	fontdiff = Ubuntu Mono,10,-1,5,50,0,0,0,0,0
     tabwidth = 4
     linebreak = false
 
