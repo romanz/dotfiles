@@ -34,7 +34,7 @@
 [diff]
     tool = meld2
 [difftool "meld2"]
-    cmd = meld --diff $LOCAL $BASE
+    cmd = meld --diff $LOCAL $REMOTE
 
 [merge]
     tool = meld3way
