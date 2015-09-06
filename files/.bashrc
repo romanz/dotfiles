@@ -1,4 +1,6 @@
 alias e='subl'
+alias subl='~/Programs/ST3/sublime_text'
+alias em='emacs --no-splash'
 
 alias du='du -kh'    # Makes a more readable output.
 alias df='df -kTh'
@@ -19,10 +21,12 @@ alias la='ll -A'           #  Show hidden files.
 alias rm='rm -v'           #  Show deleted files.
 alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
 alias f='find -name'
-alias cb='chromium-browser'
+alias cb='chromium'
 alias ydl='python ~/Programs/youtube-dl/youtube-dl'
 alias ssh-ubuntu='ssh -l ubuntu'
 alias c='xclip -selection clipboard'
+alias btcd='~/Programs/bitcoin-0.11.0/bin/bitcoin-qt'
+alias pocket-add='~/Code/pocket/pocket-add'
 
 alias clc='reset'
 alias ..='cd ..'
@@ -39,11 +43,12 @@ j() {
 }
 
 # For terminal title settings
-PROMPT_COMMAND='echo -ne "\033]0;$(basename `pwd`)\007"'
+PROMPT_COMMAND='history -a;history -r;echo -ne "\033]0;$(basename `pwd`)\007"'
 
 # Set history size
-export HISTSIZE=100000
-export HISTCONTROL=erasedups
+export HISTSIZE=1000000
+export HISTFILESIZE=1000000
+#export HISTCONTROL=erasedups
 shopt -s histappend
 
 # git niceness for command line
@@ -54,3 +59,4 @@ PS1='\[\033[33m\]$? \[\033[1;34m\]\w \[\033[1;32m\]$(__git_ps1 "[%s] ")\[\033[0m
 
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:/usr/local/go/bin
